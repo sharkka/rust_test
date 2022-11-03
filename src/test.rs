@@ -1316,6 +1316,16 @@ fn parse_context(context: Context) -> Result<(), &str> {
 
 struct Ref<'a, T: 'a>(&'a T);
 
+fn test_advanced_func() -> Box<dyn Fn(i32) -> i32> {
+    Box::new(|x| x + 1)
+}
+
+
+
+
+
+
+
 
 
 
